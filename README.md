@@ -33,7 +33,7 @@ dependencies:
 ## 📸 Demo Preview
 
 
-![shake_flutter demo](https://github.com/manburenshenglu/shake_flutter/example/example.gif)
+![shake_flutter demo](https://raw.githubusercontent.com/manburenshenglu/shake_flutter/main/example/example.gif)
 ## 🔧 Properties
 
 ### ShakeContainer

@@ -32,7 +32,7 @@ dependencies:
 ```
 ## 📸 示例效果图
 
-![shake_flutter 示例](https://github.com/manburenshenglu/shake_flutter/example/example.gif)
+![shake_flutter 示例](https://raw.githubusercontent.com/manburenshenglu/shake_flutter/main/example/example.gif)
 ---
 
 ## 🔧 属性说明
