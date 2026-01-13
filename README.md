@@ -28,11 +28,12 @@ demonstrated with **horizontal**, **vertical**, and **both-axis** shake directio
 
 ```yaml
 dependencies:
-  shake_widget: ^1.0.0
+  shake_flutter: ^1.0.0
 ```
 ## 📸 Demo Preview
 
-![shake_widget demo](https://raw.githubusercontent.com/<your-username>/<your-repo>/main/example/example.jpeg)
+
+![shake_flutter demo](https://github.com/manburenshenglu/shake_flutter/example/example.gif)
 ## 🔧 Properties
 
 ### ShakeContainer

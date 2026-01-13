@@ -28,11 +28,11 @@
 
 ```yaml
 dependencies:
-  shake_widget: ^1.0.0
+  shake_flutter: ^1.0.0
 ```
 ## 📸 示例效果图
 
-![shake_widget 示例](https://raw.githubusercontent.com/<your-username>/<your-repo>/main/example/example.jpeg)
+![shake_flutter 示例](https://github.com/manburenshenglu/shake_flutter/example/example.gif)
 ---
 
 ## 🔧 属性说明
