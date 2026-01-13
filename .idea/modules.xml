@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/example/android/app/src/debug/debug.iml" filepath="$PROJECT_DIR$/example/android/app/src/debug/debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/build/app/intermediates/merged_manifest/debug/processDebugMainManifest/processDebugMainManifest.iml" filepath="$PROJECT_DIR$/example/build/app/intermediates/merged_manifest/debug/processDebugMainManifest/processDebugMainManifest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/build/app/intermediates/merged_manifests/debug/processDebugManifest/processDebugManifest.iml" filepath="$PROJECT_DIR$/example/build/app/intermediates/merged_manifests/debug/processDebugManifest/processDebugManifest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/build/app/intermediates/packaged_manifests/debug/processDebugManifestForPackage/processDebugManifestForPackage.iml" filepath="$PROJECT_DIR$/example/build/app/intermediates/packaged_manifests/debug/processDebugManifestForPackage/processDebugManifestForPackage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/android/app/src/profile/profile.iml" filepath="$PROJECT_DIR$/example/android/app/src/profile/profile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shake_flutter.iml" filepath="$PROJECT_DIR$/shake_flutter.iml" />
+    </modules>
+  </component>
+</project>

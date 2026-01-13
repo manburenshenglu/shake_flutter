@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="flutter_assets">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/example/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/isolate_snapshot_data.jar!/" />
+      <root url="jar://$PROJECT_DIR$/example/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/AssetManifest.bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/example/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/kernel_blob.bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/example/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/vm_snapshot_data.jar!/" />
+      <root url="jar://$PROJECT_DIR$/example/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/AssetManifest.json.jar!/" />
+      <root url="jar://$PROJECT_DIR$/example/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/FontManifest.json.jar!/" />
+      <root url="jar://$PROJECT_DIR$/example/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/NativeAssetsManifest.json.jar!/" />
+      <root url="jar://$PROJECT_DIR$/example/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/NOTICES.Z.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
