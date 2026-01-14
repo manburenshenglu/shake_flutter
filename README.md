@@ -28,7 +28,7 @@ demonstrated with **horizontal**, **vertical**, and **both-axis** shake directio
 
 ```yaml
 dependencies:
-  flutter_shake_container: ^1.0.0
+  flutter_shake_container: ^1.1.0
 ```
 ## 📥 Import
 
