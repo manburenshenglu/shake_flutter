@@ -5,7 +5,7 @@
   "packages": [
     {
       "name": "flutter_shake_container",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "dependencies": [
         "flutter"
       ],

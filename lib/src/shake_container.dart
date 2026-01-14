@@ -3,6 +3,9 @@ import 'shake_axis.dart';
 import 'shake_config.dart';
 import 'shake_trigger.dart';
 
+/// A lightweight shake animation container for any Flutter widget.
+///
+/// Trigger it via [ShakeTrigger] and customize animation using [ShakeConfig].
 class ShakeContainer extends StatefulWidget {
   final ShakeTrigger trigger;
   final ShakeConfig config;

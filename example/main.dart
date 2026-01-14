@@ -95,7 +95,7 @@ class _HomeState extends State<Home> {
               autoDismiss: const Duration(seconds: 2),
               onAutoDismiss: () => errorH.value = '',
               onShakeStart: () {
-                print(
+                debugPrint(
                   'Shaken by ValueNotifier： Horizontal shake started, do something...such as haptic feedback or vibration ',
                 );
               },
@@ -112,7 +112,7 @@ class _HomeState extends State<Home> {
               autoDismiss: const Duration(seconds: 3),
               onAutoDismiss: () => errorV.value = '',
               onShakeStart: () {
-                print(
+                debugPrint(
                   'Shaken by ValueNotifier： Vertical shake started, do something...such as haptic feedback or vibration ',
                 );
               },
@@ -128,7 +128,7 @@ class _HomeState extends State<Home> {
               autoDismiss: const Duration(milliseconds: 1200),
               onAutoDismiss: () => errorB.value = '',
               onShakeStart: () {
-                print(
+                debugPrint(
                   'Shaken by ValueNotifier： Both-axis shake started, do something...such as haptic feedback or vibration ',
                 );
               },
@@ -152,7 +152,7 @@ class _HomeState extends State<Home> {
               trigger: triggerGetxH,
               config: horizontal,
               onShakeStart: () {
-                print(
+                debugPrint(
                   'Shaken by GetX： Horizontal shake started, do something...such as haptic feedback or vibration ',
                 );
               },
@@ -167,7 +167,7 @@ class _HomeState extends State<Home> {
               trigger: triggerGetxV,
               config: vertical,
               onShakeStart: () {
-                print(
+                debugPrint(
                   'Shaken by GetX： Vertical shake started, do something...such as haptic feedback or vibration ',
                 );
               },
@@ -185,7 +185,7 @@ class _HomeState extends State<Home> {
               trigger: triggerGetxB,
               config: both,
               onShakeStart: () {
-                print(
+                debugPrint(
                   'Shaken by GetX：Both shake started, do something...such as haptic feedback or vibration ',
                 );
               },
@@ -210,7 +210,7 @@ class _HomeState extends State<Home> {
               config: horizontal,
               child: const Text('Horizontal shake'),
               onShakeStart: () {
-                print(
+                debugPrint(
                   'Shaken by Stream： Horizontal shake started, do something...such as haptic feedback or vibration ',
                 );
               },
@@ -225,7 +225,7 @@ class _HomeState extends State<Home> {
               config: vertical,
               child: const Text('Vertical shake'),
               onShakeStart: () {
-                print(
+                debugPrint(
                   'Shaken by Stream： Vertical shake started, do something...such as haptic feedback or vibration ',
                 );
               },
@@ -240,7 +240,7 @@ class _HomeState extends State<Home> {
               config: both,
               child: const Text('Both-axis shake'),
               onShakeStart: () {
-                print(
+                debugPrint(
                   'Shaken by Stream： Both-axis shake started, do something...such as haptic feedback or vibration ',
                 );
               },

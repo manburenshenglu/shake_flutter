@@ -260,4 +260,5 @@ streamB.add(null);
 
 ## 📄 许可证
 
-MIT License
+本项目遵循 MIT 开源许可证，具体内容请查看 [LICENSE](LICENSE)。
+
