@@ -1,6 +1,6 @@
 [English](README.md) | [中文](README_CN.md)
 
-# shake_flutter
+# flutter_shake_widget
 
 一个轻量、可配置的 Flutter 抖动动画组件。  
 **支持任意 Flutter Widget**。
@@ -28,11 +28,11 @@
 
 ```yaml
 dependencies:
-  shake_flutter: ^1.0.0
+  flutter_shake_widget: ^1.0.0
 ```
 ## 📸 示例效果图
 
-![shake_flutter 示例](https://raw.githubusercontent.com/manburenshenglu/shake_flutter/main/example/example.gif)
+![flutter_shake_widget 示例](https://raw.githubusercontent.com/manburenshenglu/shake_flutter/main/example/example.gif)
 ---
 
 ## 🔧 属性说明

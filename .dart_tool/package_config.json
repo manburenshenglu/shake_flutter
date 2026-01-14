@@ -158,7 +158,7 @@
       "languageVersion": "3.5"
     },
     {
-      "name": "shake_flutter",
+      "name": "flutter_shake_widget",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.17"

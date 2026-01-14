@@ -1,4 +1,4 @@
-library shake_flutter;
+library flutter_shake_widget;
 
 export 'src/shake_axis.dart';
 export 'src/shake_config.dart';

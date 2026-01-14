@@ -1,10 +1,10 @@
 {
   "roots": [
-    "shake_flutter"
+    "flutter_shake_widget"
   ],
   "packages": [
     {
-      "name": "shake_flutter",
+      "name": "flutter_shake_widget",
       "version": "1.0.0",
       "dependencies": [
         "flutter"

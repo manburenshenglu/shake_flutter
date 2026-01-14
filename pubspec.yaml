@@ -1,11 +1,11 @@
-name: shake_flutter
+name: flutter_shake_widget
 homepage: https://github.com/manburenshenglu/shake_flutter
 repository: https://github.com/manburenshenglu/shake_flutter
 description: >
   A lightweight and configurable shake animation widget for Flutter.
   Includes presets for error, warning, and subtle feedback.
 
-  `shake_flutter` provides a clean and extensible way to add **shake feedback**
+  `flutter_shake_widget` provides a clean and extensible way to add **shake feedback**
   to widgets and text. It is commonly used for **form validation, error messages,
   warnings, and subtle UI hints**.
 
