@@ -1,4 +1,5 @@
-[English](README.md) | [中文](README_CN.md)
+[English](https://github.com/manburenshenglu/shake_flutter/blob/main/README.md) |
+[中文](https://github.com/manburenshenglu/shake_flutter/blob/main/README_CN.md)
 
 # flutter_shake_container
 
@@ -28,7 +29,7 @@ demonstrated with **horizontal**, **vertical**, and **both-axis** shake directio
 
 ```yaml
 dependencies:
-  flutter_shake_container: ^1.1.0
+  flutter_shake_container: ^1.1.1
 ```
 ## 📥 Import
 

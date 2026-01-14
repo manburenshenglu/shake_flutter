@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project follows [Semantic Versioning](https://semver.org/).
 
+## 1.1.2
+
+### Changed
+
+- Updated pubspec topics.
+- Improved README documentation and examples.
+
+---
+
+## 1.1.1
+
+### Fixed
+
+- Fixed typo in README example code comments.
+
 ---
 
 ## 1.1.0
