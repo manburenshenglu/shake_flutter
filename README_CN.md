@@ -30,6 +30,13 @@
 dependencies:
   flutter_shake_container: ^1.0.0
 ```
+
+## 📥 Import
+
+```dart
+import 'package:flutter_shake_container/flutter_shake_container.dart';
+```
+
 ## 📸 示例效果图
 
 ![flutter_shake_container 示例](https://raw.githubusercontent.com/manburenshenglu/shake_flutter/main/example/example.gif)

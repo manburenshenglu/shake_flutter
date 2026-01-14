@@ -30,6 +30,12 @@ demonstrated with **horizontal**, **vertical**, and **both-axis** shake directio
 dependencies:
   flutter_shake_container: ^1.0.0
 ```
+## 📥 Import
+
+```dart
+import 'package:flutter_shake_container/flutter_shake_container.dart';
+```
+
 ## 📸 Demo Preview
 
 
