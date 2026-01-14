@@ -1,6 +1,6 @@
 [English](README.md) | [中文](README_CN.md)
 
-# flutter_shake_widget
+# flutter_shake_container
 
 A lightweight, configurable shake animation widget for Flutter.  
 Supports **any Flutter widget**.
@@ -28,12 +28,12 @@ demonstrated with **horizontal**, **vertical**, and **both-axis** shake directio
 
 ```yaml
 dependencies:
-  flutter_shake_widget: ^1.0.0
+  flutter_shake_container: ^1.0.0
 ```
 ## 📸 Demo Preview
 
 
-![flutter_shake_widget demo](https://raw.githubusercontent.com/manburenshenglu/shake_flutter/main/example/example.gif)
+![flutter_shake_container demo](https://raw.githubusercontent.com/manburenshenglu/shake_flutter/main/example/example.gif)
 ## 🔧 Properties
 
 ### ShakeContainer

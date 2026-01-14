@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:example/demo_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_shake_container/flutter_shake_container.dart';
 import 'package:get/get.dart';
-import 'package:shake_flutter/flutter_shake_widget.dart';
 
 void main() {
   Get.put(DemoGetxController());
