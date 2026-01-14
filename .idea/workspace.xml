@@ -10,6 +10,10 @@
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README_CN.md" beforeDir="false" afterPath="$PROJECT_DIR$/README_CN.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/shake_config.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/shake_config.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/shake_container.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/shake_container.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/shake_preset.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/shake_preset.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/shake_text.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/shake_text.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

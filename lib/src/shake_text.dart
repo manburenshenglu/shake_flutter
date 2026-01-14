@@ -3,11 +3,9 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 
-import 'shake_config.dart';
-import 'shake_container.dart';
-import 'shake_trigger.dart';
+import '../flutter_shake_container.dart';
 
-/// A shaking text widget that listens to a [ValueListenable<String>].
+/// A shaking text widget that listens to a [ValueNotifier<String>].
 ///
 /// When [text] becomes non-empty, it triggers a shake animation.
 /// This is especially useful for showing **validation errors**, **warnings**,
@@ -23,20 +21,20 @@ import 'shake_trigger.dart';
 ///
 /// ShakeText(
 ///   text: error,
-///   config: ShakePreset.error,
 ///   autoDismiss: const Duration(seconds: 2),
-///   onAutoDismiss: () => error.value = '',
 /// );
 ///
 /// error.value = 'Invalid password';
 /// ```
 class ShakeText extends StatefulWidget {
-  /// The text source to observe.
+  /// The text source to observe and update.
   ///
   /// A shake is triggered whenever this value becomes non-empty.
-  final ValueListenable<String> text;
+  final ValueNotifier<String> text;
 
   /// Shake animation configuration.
+  ///
+  /// Defaults to [ShakePreset.error].
   final ShakeConfig config;
 
   /// Optional text style for the rendered [Text].
@@ -44,14 +42,16 @@ class ShakeText extends StatefulWidget {
 
   /// Automatically dismiss the text after this duration.
   ///
-  /// If null, the text will remain until [text] is cleared manually.
+  /// Defaults to 2 seconds.
+  ///
+  /// If set to `null`, the text will remain until [text] is cleared manually.
   final Duration? autoDismiss;
 
   /// Called when [autoDismiss] is reached.
   ///
-  /// Typical usage:
+  /// If null, it will clear the text by default:
   /// ```dart
-  /// onAutoDismiss: () => error.value = '',
+  /// text.value = '';
   /// ```
   final VoidCallback? onAutoDismiss;
 
@@ -74,12 +74,12 @@ class ShakeText extends StatefulWidget {
   final VoidCallback? onShakeStart;
 
   /// Creates a shaking text widget.
-  const ShakeText({
+  ShakeText({
     super.key,
     required this.text,
-    required this.config,
+    this.config = ShakePreset.error,
     this.style,
-    this.autoDismiss,
+    this.autoDismiss = const Duration(seconds: 2),
     this.onAutoDismiss,
     this.hideWhenEmpty = true,
     this.onShakeStart,
@@ -91,9 +91,6 @@ class ShakeText extends StatefulWidget {
 
 class _ShakeTextState extends State<ShakeText> {
   /// Internal counter used to emit shake events.
-  ///
-  /// Every time the text becomes non-empty, this value is incremented.
-  /// It acts as a signal rather than a UI state.
   final ValueNotifier<int> _internal = ValueNotifier(0);
 
   /// Internal trigger that converts [_internal] changes into [ShakeTrigger].
@@ -108,12 +105,8 @@ class _ShakeTextState extends State<ShakeText> {
     widget.text.addListener(_onTextChanged);
 
     /// Initial shake if the text is already non-empty.
-    ///
-    /// This covers cases where the parent sets an initial error message before
-    /// the first frame is built.
     if (widget.text.value.isNotEmpty) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        // Delay one microtask to ensure AnimationController is attached.
         Future.microtask(() {
           if (!mounted) return;
           _internal.value++;
@@ -124,14 +117,12 @@ class _ShakeTextState extends State<ShakeText> {
   }
 
   void _onTextChanged() {
-    /// If text becomes empty, cancel the auto-dismiss timer.
     if (widget.text.value.isEmpty) {
       _timer?.cancel();
       setState(() {});
       return;
     }
 
-    /// Trigger shake on next frame to avoid same-frame build conflicts.
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
       _internal.value++;
@@ -146,7 +137,14 @@ class _ShakeTextState extends State<ShakeText> {
     if (widget.autoDismiss == null) return;
 
     _timer = Timer(widget.autoDismiss!, () {
-      widget.onAutoDismiss?.call();
+      if (!mounted) return;
+
+      // Default dismiss behavior: clear the text
+      if (widget.onAutoDismiss != null) {
+        widget.onAutoDismiss!.call();
+      } else {
+        widget.text.value = '';
+      }
     });
   }
 

@@ -1,7 +1,6 @@
 import 'package:flutter/widgets.dart';
-import 'shake_axis.dart';
-import 'shake_config.dart';
-import 'shake_trigger.dart';
+
+import '../flutter_shake_container.dart';
 
 /// A lightweight shake animation container for any Flutter widget.
 ///
@@ -22,7 +21,7 @@ class ShakeContainer extends StatefulWidget {
   const ShakeContainer({
     super.key,
     required this.trigger,
-    required this.config,
+    this.config = ShakePreset.error, // default config
     required this.child,
     this.onShakeStart,
   });

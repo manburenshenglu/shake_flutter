@@ -1,4 +1,5 @@
 import 'package:flutter/animation.dart';
+
 import 'shake_axis.dart';
 
 /// Configuration for a shake animation.
@@ -57,17 +58,37 @@ class ShakeConfig {
   /// - [ShakeAxis.both] → both-axis shake
   final ShakeAxis axis;
 
-  /// Creates a shake animation configuration.
+  /// Recommended constructor with validation.
+  factory ShakeConfig.create({
+    required List<double> offsets,
+    required List<double> weights,
+    Duration duration = const Duration(milliseconds: 600),
+    Curve curve = Curves.easeOut,
+    ShakeAxis axis = ShakeAxis.horizontal,
+  }) {
+    assert(offsets.length >= 2, 'offsets must have at least 2 values.');
+    assert(
+      weights.length == offsets.length - 1,
+      'weights.length must be offsets.length - 1.',
+    );
+
+    return ShakeConfig(
+      offsets: offsets,
+      weights: weights,
+      duration: duration,
+      curve: curve,
+      axis: axis,
+    );
+  }
+
+  /// Public const constructor.
   ///
-  /// Assertions:
-  /// - [offsets.length] must be >= 2
-  /// - [weights.length] must equal `offsets.length - 1`
+  /// No runtime asserts here, recommend use [ShakeConfig.create] for validation.
   const ShakeConfig({
     required this.offsets,
     required this.weights,
     this.duration = const Duration(milliseconds: 600),
     this.curve = Curves.easeOut,
     this.axis = ShakeAxis.horizontal,
-  })  : assert(offsets.length >= 2),
-        assert(weights.length == offsets.length - 1);
+  });
 }

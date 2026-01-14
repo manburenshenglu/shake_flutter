@@ -19,7 +19,7 @@ class ShakePreset {
   /// Example usage:
   /// - Small UI hint
   /// - Subtle validation feedback
-  static final ShakeConfig subtle = ShakeConfig(
+  static const ShakeConfig subtle = ShakeConfig(
     offsets: [0, -6, 6, 0],
     weights: [1, 1, 1],
     duration: const Duration(milliseconds: 280),
@@ -30,7 +30,7 @@ class ShakePreset {
   /// Example usage:
   /// - Form validation errors
   /// - Login failure hints
-  static final ShakeConfig error = ShakeConfig(
+  static const ShakeConfig error = ShakeConfig(
     offsets: [0, -12, 12, -8, 8, 0],
     weights: [1, 2, 2, 2, 1],
   );
@@ -40,7 +40,7 @@ class ShakePreset {
   /// Example usage:
   /// - Warning messages
   /// - Attention-required UI states
-  static final ShakeConfig warning = ShakeConfig(
+  static const ShakeConfig warning = ShakeConfig(
     offsets: [0, -10, 10, -10, 10, 0],
     weights: [1, 1, 1, 1, 1],
   );
